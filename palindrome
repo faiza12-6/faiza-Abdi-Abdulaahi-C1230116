@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Assign2{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String us;
+        String f= "";
+        System.out.print("Geli eray ama tiro: ");
+        us= input.nextLine();
+
+        for (int i = us.length() - 1; i >=0; i--) {
+            f = f+ us.charAt(i);
+        }
+        if (us.equals(f)) {
+            System.out.println(" waa palindrome.");
+        } else {
+            System.out.println(" ma aha palindrome.");
+        }
+    }
+}
