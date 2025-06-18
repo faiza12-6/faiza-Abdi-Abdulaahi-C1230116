@@ -1,0 +1,22 @@
+public class Assignment5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        String input = "";
+
+        System.out.print("Please enter integer numbers.\n" +
+                         "Tap 'n' to exit!!\n");
+
+        while (!input.equals("n")) {
+            System.out.print("Enter number: ");
+            input = scanner.nextLine();
+
+            if (!input.equals("n")) {
+                int number = Integer.parseInt(input);
+                sum += number;
+            }
+        }
+
+        System.out.println("Isku darka numbers-ka waa: " + sum);
+    }
+}
